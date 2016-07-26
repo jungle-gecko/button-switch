@@ -1,19 +1,19 @@
 +function ($) {
 	'use strict';
 
-	$.fn.inputswitch = function (options)
+	$.fn.buttonswitch = function (options)
 	{
-		return new InputSwitch(this, options);
+		return new ButtonSwitch(this, options);
 	};
 	
-	$.fn.inputswitch.defaults = {
+	$.fn.buttonswitch.defaults = {
 	};
 	
-	var InputSwitch = function (element, options)
+	var ButtonSwitch = function (element, options)
 	{
-		var myInputSwitch = this;
+		var myButtonSwitch = this;
 		
-		myInputSwitch.options = $.extend(true, {}, $.fn.inputswitch.defaults, options);
+		myButtonSwitch.options = $.extend(true, {}, $.fn.buttonswitch.defaults, options);
 		
 		$(element).find('input[type="radio"], input[type="checkbox"]').change(function() {
 			var $input = $(this);
