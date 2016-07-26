@@ -1,0 +1,7 @@
+{
+    "name": "jungle-gecko/button-switch",
+    "type": "library",
+    "description": "Beautiful styling of inputs (radio buttons, checkboxes) wrapped with Bootstrap",
+    "keywords": ["form", "ajax", "js", "javascript"],
+    "license": "MIT"
+}

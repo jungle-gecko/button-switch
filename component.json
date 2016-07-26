@@ -1,0 +1,8 @@
+{
+	"name": "input-switch",
+	"version": "1.0.0",
+	"main": ["./js/input-switch.js"],
+	"dependencies": {
+		"jquery": "~2.1.0"
+	}
+}
