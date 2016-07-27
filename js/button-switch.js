@@ -14,6 +14,9 @@
 		var myButtonSwitch = this;
 		
 		myButtonSwitch.options = $.extend(true, {}, $.fn.buttonswitch.defaults, options);
+
+		// Init hack for Bootstrap
+		$(element).find(':input:checked').parent('.btn').addClass('active');
 		
 		$(element).find('input[type="radio"], input[type="checkbox"]').change(function() {
 			var $input = $(this);
@@ -33,7 +36,7 @@
 					$sibbling.removeClass($sibbling.data('active-class')).addClass($sibbling.data('inactive-class'));
 		    	} 
 			});
-		});
+		}).trigger('change');
 	};
 
 }(jQuery);
